@@ -19,6 +19,7 @@ COPY vsftpd.conf /etc/vsftpd/vsftpd.conf
 # Copia archivos python
 
 WORKDIR /usr/src/app
+RUN git clone https://github.com/ManuDve/dev-app.git -y
 COPY . .
 
 # Expone puertos
